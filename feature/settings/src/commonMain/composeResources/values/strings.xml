@@ -1,0 +1,15 @@
+<resources>
+    <string name="settings">Settings</string>
+    <string name="model_info_title">CurrentModel</string>
+    <string name="model_info_version">Version:</string>
+    <string name="model_info_created_at">Created at:</string>
+    <string name="model_info_last_update">Last update at:</string>
+    <string name="model_info_check_for_updates">Check for updates</string>
+    <string name="model_info_update_available">An update is available!</string>
+    <string name="model_info_download_model">Download model</string>
+    <string name="model_info_error">Loading Error. Try Again</string>
+    <string name="model_info_no_model">Model is not installed</string>
+    <string name="model_info_size_title">Size:</string>
+    <string name="model_info_size_content">Mb</string>
+    <string name="api_key_label">API-key</string>
+</resources>

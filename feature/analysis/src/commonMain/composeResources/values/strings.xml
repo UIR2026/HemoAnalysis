@@ -1,0 +1,53 @@
+<resources>
+    <string name="grant_permissions">Grant permissions!</string>
+    <string name="grant_permissions_text">Grant permissions to access image analysis</string>
+    <string name="grant_text">Grant</string>
+
+    <string name="select_image">Select an image</string>
+    <string name="start_analysis">Start analysis</string>
+
+    <string name="confidence">Confidence</string>
+    <string name="iou">Intersection over Union</string>
+
+    <string name="analysis">Analysis</string>
+
+    <string name="cell_class_lymphocyte">Lymphocytes</string>
+    <string name="cell_class_metamyelocyte">Metamyelocytes</string>
+    <string name="cell_class_monocyte">Monocytes</string>
+    <string name="cell_class_myelocyte">Myelocytes</string>
+    <string name="cell_class_normoblasts">Normoblastes</string>
+    <string name="cell_class_rod_neutrophil">Rod neutrophiles</string>
+    <string name="cell_class_segmentonuclear_neutrophil">Segmentonuclear neutrophils</string>
+    <string name="cell_class_blast">Blasts</string>
+    <string name="cell_class_promyelocyte">Promyelocytes</string>
+    <string name="cell_class_eosinophil">Eosinophils</string>
+    <string name="cell_class_basophil">Basophils</string>
+    <string name="cell_class_magakariocyte">Megakaryocytes</string>
+    <string name="cell_class_bad_cells">Bad cells</string>
+    <string name="cell_class_plasma_cell">Plasma cells</string>
+    <string name="cell_class_artifacts">Artifacts</string>
+    <string name="cell_class_gumpricht_shadows">Gumpricht shadows</string>
+    <string name="cell_class_methoses">Mitoses</string>
+    <string name="cell_class_normoblasts_oxyfilny">Oxyphilic normoblasts</string>
+    <string name="cell_class_macrophages">Macrophages</string>
+    <string name="cell_class_normoblasts_erythroblasts">Erythroblast normoblasts</string>
+    <string name="cell_class_normoblasts_basophilic">Basophilic normoblasts</string>
+    <string name="cell_class_normoblasts_polychromatophilic">Polychromatophilic normoblasts</string>
+
+    <string name="report_title">Report</string>
+    <string name="report_inference_duration">Inference duration:</string>
+    <string name="report_preprocessing_duration">Preprocessing duration:</string>
+    <string name="report_postprocessing_duration">Postprocessing duration:</string>
+    <string name="report_total_duration">Total duration:</string>
+
+    <string name="parameters_title">Analysis parameters</string>
+    <string name="preprocess_variant_deafult">Default</string>
+    <string name="preprocess_variant_brightness_contrast">Brightness contrast</string>
+
+    <string name="roi_variant_none">None</string>
+    <string name="roi_variant_threshold_filter">Threshold filter</string>
+    <string name="roi_variant_morph">Threshold morph</string>
+
+    <string name="roi_params_title">Highlight regions of interests</string>
+    <string name="preprocess_params_title">Preprocessing</string>
+</resources>

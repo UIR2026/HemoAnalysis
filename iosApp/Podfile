@@ -1,0 +1,4 @@
+platform :ios, '15.1'
+
+target 'iosApp' do
+end

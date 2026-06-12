@@ -1,0 +1,129 @@
+@startuml
+left to right direction
+
+actor "Работник фабрики" as FactoryWorker
+actor "Работник склада" as WarehouseWorker
+actor "Работник магазина" as ShopWorker
+actor "Администратор" as Admin
+
+note left of FactoryWorker
+Отвечает за регистрацию
+произведенных товаров
+и организацию поставок
+end note
+
+note left of WarehouseWorker
+Управляет складскими операциями:
+приемка, хранение, отгрузка
+end note
+
+note left of ShopWorker
+Формирует заявки на товары
+и отслеживает доступность
+end note
+
+note left of Admin
+Управляет пользователями,
+ролями и привязкой
+сотрудников к складам
+end note
+
+rectangle "Система управления складом" {
+
+    usecase "Управление товарами" as UC_ManageProducts
+    usecase "Управление категориями" as UC_ManageCategories
+    usecase "Регистрация поставки" as UC_RegisterDelivery
+
+    usecase "Добавить товар" as UC_AddProduct
+    usecase "Управление ассортиментом" as UC_Assortment
+    usecase "Редактировать товар" as UC_EditProduct
+
+    usecase "Указать фабрику" as UC_SetFactory
+    usecase "Указать дату поставки" as UC_SetDeliveryDate
+    usecase "Указать товары" as UC_SetDeliveryProducts
+    usecase "Указать склад" as UC_SetWarehouse
+
+    usecase "Подтверждение приемки" as UC_AcceptDelivery
+    usecase "Подтвердить количество" as UC_ConfirmQuantity
+    usecase "Проверить товар" as UC_CheckProduct
+    usecase "Обновить остатки" as UC_UpdateStock
+
+    usecase "Обработка отгрузки" as UC_ProcessShipment
+    usecase "Зафиксировать дату отгрузки" as UC_SetShipmentDate
+    usecase "Подтвердить отгрузку" as UC_ConfirmShipment
+
+    usecase "Просмотр остатков" as UC_ViewStock
+    usecase "Просмотр по категориям" as UC_ViewByCategories
+    usecase "Просмотр по складам" as UC_ViewByWarehouses
+
+    usecase "Запрос отгрузки" as UC_RequestShipment
+    usecase "Указать магазин" as UC_SetShop
+    usecase "Указать количество" as UC_SetQuantity
+    usecase "Выбрать товары" as UC_SelectProducts
+
+    usecase "Управление пользователями" as UC_ManageUsers
+    usecase "Создать пользователя" as UC_CreateUser
+    usecase "Редактировать пользователя" as UC_EditUser
+    usecase "Логически удалить пользователя" as UC_DeleteUser
+
+    usecase "Управление ролями" as UC_ManageRoles
+    usecase "Назначить роль" as UC_AssignRole
+
+    usecase "Управление привязкой к складам" as UC_ManageWarehouseLinks
+    usecase "Привязать пользователя к складу" as UC_LinkUserWarehouse
+    usecase "Отвязать пользователя от склада" as UC_UnlinkUserWarehouse
+    usecase "Назначить владельца склада" as UC_AssignWarehouseOwner
+}
+
+FactoryWorker --> UC_ManageProducts
+FactoryWorker --> UC_ManageCategories
+FactoryWorker --> UC_RegisterDelivery
+
+WarehouseWorker --> UC_AcceptDelivery
+WarehouseWorker --> UC_ProcessShipment
+WarehouseWorker --> UC_ViewStock
+
+ShopWorker --> UC_ViewStock
+ShopWorker --> UC_RequestShipment
+
+Admin --> UC_ManageUsers
+Admin --> UC_ManageRoles
+Admin --> UC_ManageWarehouseLinks
+
+UC_ManageProducts ..> UC_AddProduct : include
+UC_ManageProducts ..> UC_Assortment : include
+UC_ManageProducts ..> UC_EditProduct : include
+
+UC_RegisterDelivery ..> UC_SetFactory : include
+UC_RegisterDelivery ..> UC_SetDeliveryDate : include
+UC_RegisterDelivery ..> UC_SetDeliveryProducts : include
+UC_RegisterDelivery ..> UC_SetWarehouse : include
+
+UC_AcceptDelivery ..> UC_ConfirmQuantity : include
+UC_AcceptDelivery ..> UC_CheckProduct : include
+UC_AcceptDelivery ..> UC_SetWarehouse : include
+UC_AcceptDelivery ..> UC_UpdateStock : include
+
+UC_ProcessShipment ..> UC_UpdateStock : include
+UC_ProcessShipment ..> UC_SetShipmentDate : include
+UC_ProcessShipment ..> UC_ConfirmShipment : include
+
+UC_ViewStock ..> UC_ViewByCategories : include
+UC_ViewStock ..> UC_ViewByWarehouses : include
+
+UC_RequestShipment ..> UC_SetShop : include
+UC_RequestShipment ..> UC_SetQuantity : include
+UC_RequestShipment ..> UC_SelectProducts : include
+UC_RequestShipment ..> UC_SetWarehouse : include
+
+UC_ManageUsers ..> UC_CreateUser : include
+UC_ManageUsers ..> UC_EditUser : include
+UC_ManageUsers ..> UC_DeleteUser : include
+
+UC_ManageRoles ..> UC_AssignRole : include
+
+UC_ManageWarehouseLinks ..> UC_LinkUserWarehouse : include
+UC_ManageWarehouseLinks ..> UC_UnlinkUserWarehouse : include
+UC_ManageWarehouseLinks ..> UC_AssignWarehouseOwner : include
+
+@enduml

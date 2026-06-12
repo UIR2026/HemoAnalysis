@@ -1,0 +1,15 @@
+<resources>
+    <string name="settings">Настройки</string>
+    <string name="model_info_title">Текущая модель</string>
+    <string name="model_info_version">Версия:</string>
+    <string name="model_info_created_at">Дата создания:</string>
+    <string name="model_info_last_update">Последнее обновление:</string>
+    <string name="model_info_check_for_updates">Проверить обновление</string>
+    <string name="model_info_update_available">Доступно обновление!</string>
+    <string name="model_info_error">Ошибка загрузки. Попробуйте снова</string>
+    <string name="model_info_download_model">Загрузить модель</string>
+    <string name="model_info_no_model">Нет установленной модели</string>
+    <string name="model_info_size_title">Размер:</string>
+    <string name="model_info_size_content">Мб</string>
+    <string name="api_key_label">API-ключ</string>
+</resources>

@@ -1,0 +1,12 @@
+TEAM_ID=
+
+PRODUCT_NAME=HemoAnalysis
+PRODUCT_BUNDLE_IDENTIFIER=ru.tanexc.hemoanalysis.HemoAnalysis$(TEAM_ID)
+
+CURRENT_PROJECT_VERSION=1
+MARKETING_VERSION=1.0
+
+KMP_PODS_BUILD_DIR=$(SRCROOT)/../tool/analysis/build/cocoapods/synthetic/ios/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+
+FRAMEWORK_SEARCH_PATHS=$(inherited) $(KMP_PODS_BUILD_DIR)/onnxruntime-objc $(KMP_PODS_BUILD_DIR)/XCFrameworkIntermediates/onnxruntime-c
+OTHER_LDFLAGS=$(inherited) -ObjC -lc++ -framework onnxruntime_objc -framework onnxruntime -weak_framework CoreML

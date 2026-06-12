@@ -1,0 +1,53 @@
+<resources>
+    <string name="grant_permissions">Предоставьте разрешения!</string>
+    <string name="grant_permissions_text">Разрешения необдимы для работы анализа</string>
+    <string name="grant_text">Предоставить</string>
+
+    <string name="select_image">Выбрать изображение</string>
+    <string name="start_analysis">Начать анализ</string>
+
+    <string name="confidence">Уверенность</string>
+    <string name="iou">Допустимое пересечение</string>
+
+    <string name="analysis">Анализ</string>
+
+    <string name="cell_class_lymphocyte">Лимфоциты</string>
+    <string name="cell_class_metamyelocyte">Метамиелоциты</string>
+    <string name="cell_class_monocyte">Моноциты</string>
+    <string name="cell_class_myelocyte">Миелоциты</string>
+    <string name="cell_class_normoblasts">Нормобласты</string>
+    <string name="cell_class_rod_neutrophil">Палочкоядерные нейтрофилы</string>
+    <string name="cell_class_segmentonuclear_neutrophil">Сегментоядерные нейтрофилы</string>
+    <string name="cell_class_blast">Бласты</string>
+    <string name="cell_class_promyelocyte">Промиелоциты</string>
+    <string name="cell_class_eosinophil">Эозинофилы</string>
+    <string name="cell_class_basophil">Базофилы</string>
+    <string name="cell_class_magakariocyte">Мегакариоциты</string>
+    <string name="cell_class_bad_cells">Плохие клетки</string>
+    <string name="cell_class_plasma_cell">Плазматические клетки</string>
+    <string name="cell_class_artifacts">Артефакты</string>
+    <string name="cell_class_gumpricht_shadows">Тени Гумпрехта</string>
+    <string name="cell_class_methoses">Митозы</string>
+    <string name="cell_class_normoblasts_oxyfilny">Нормобласты оксифильные</string>
+    <string name="cell_class_macrophages">Макрофаги</string>
+    <string name="cell_class_normoblasts_erythroblasts">Нормобласты эритробластические</string>
+    <string name="cell_class_normoblasts_basophilic">Нормобласты базофильные</string>
+    <string name="cell_class_normoblasts_polychromatophilic">Нормобласты полихроматофильные</string>
+
+    <string name="report_title">Отчёт</string>
+    <string name="report_inference_duration">Время инференса:</string>
+    <string name="report_preprocessing_duration">Время предобработки:</string>
+    <string name="report_postprocessing_duration">Время постобработки:</string>
+    <string name="report_total_duration">Общее время:</string>
+
+    <string name="parameters_title">Параметры анализа</string>
+    <string name="preprocess_variant_deafult">По умолчанию</string>
+    <string name="preprocess_variant_brightness_contrast">Яркость и контраст</string>
+
+    <string name="roi_variant_none">Отключено</string>
+    <string name="roi_variant_threshold_filter">Пороговая фильтрация</string>
+    <string name="roi_variant_morph">Пороговая маска</string>
+
+    <string name="roi_params_title">Выделение областей интереса</string>
+    <string name="preprocess_params_title">Предобработка</string>
+</resources>
